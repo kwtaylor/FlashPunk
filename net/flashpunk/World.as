@@ -745,6 +745,17 @@
 		}
 		
 		/**
+		 * The next Entity of the type.
+		 * @param	e		    The entity to start from.
+		 * @return	The Entity.
+		 */
+		public function typeNext(e:Entity):Entity
+		{
+			if (!e) return null;
+			return e._typeNext as Entity;
+		}
+		
+		/**
 		 * The first Entity of the Class.
 		 * @param	c		The Class type to check.
 		 * @return	The Entity.
